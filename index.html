@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froggys by night</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="javascript/carousel.js" defer></script>
+    <script src="javascript/events.js" defer></script>
+    <script src="javascript/nav-change.js" defer></script>
+    <script src="javascript/carousel.js" defer></script>
+    <script src="javascript/picture-change.js" defer></script>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <img src="img/froog.png" alt="">
+        </div>
+        <ul>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="book.html">BOOK BORD</a></li>
+            <li><a href="drinks.html">DRINKS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="header-content" class="header-content"></div>
+    
+        <!-- Videoelementet -->
+        <video autoplay muted loop id="video-background">
+            <source src="video/froggysprojektvideo.mp4" type="video/mp4">
+            Din browser understøtter ikke videoen.
+        </video>
+    </header>
+    <section class="introduktion">
+        <div class="intro-container">
+            <div class="intro-billede">
+                <img src="img/om.png" alt="">
+            </div>
+            <div class="intro-texter">
+                <h1><span> DET NYE</span> FROGGYS BY NIGHT 2.0</h1>
+                <p>Froggys By Night 2.0 omdannes i weekenden til et festligt sted med fantastisk stemning og fantastiske
+                    vibes.
+                    Dette venneklubunivers fokuserer på at levere en kvalitetsoplevelse med cocktails og musik, perfekt
+                    til forfester.
+                    Hver weekend fra kl. 22:00 spiller DJ’en forskellige genrer, herunder lounge, RnB, Old School,
+                    house, spansk, fransk, afrikansk musik og dansk urban hiphop. Formålet med Froggys By Night 2.0 er
+                    at skabe en fantastisk stemning for både stamgæster og nye besøgende, der deler kærligheden til
+                    cocktails og høj kvalitet musik.</p>
+                <div class="intro-knapper">
+                    <button onclick="location.href='book.html'">
+                        <div class="btn-border">BOOK BORD</div>
+                    </button>
+                    <button class="drinks-kort-knap" onclick="location.href='drinks.html'">
+                        <div class="btn-border">DRINKS KORT</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="billeder-sted">
+
+        <div class="drinks-background-container">
+            <div class="drinks-main-container">
+                <div><img src="img/bartender1.png" alt=""></div>
+                <div> <img src="img/mood1.png" alt=""> </div>
+                <div> <img src="img/geast1.png" alt=""> </div>
+            </div>
+            <div class="prikker-container">
+                <div class="prikker"></div>
+                <div class="prikker"></div>
+                <div class="prikker"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="populaer-drinks">
+        <h1 class="titel-drinks">VORES MEST POPULÆRE <span>DRINKS</span></h1>
+        <p class="paragraf-drinks">Froggys tilbyder lækre, smagsfyldte og flotte cocktails til enhver smag. Her er et
+            udvalg af de mest foretrukne cocktails.
+            Kom og nyd en af de udvalgte drinks hos os samtidig med god musik og stemning.
+            Vi tilbyder flere slags cocktails, som du kan se på vores drinkskort. </p>
+
+        <div class="populaer-drinks-container">
+            <div class="populaer-drink-div">
+                <p class="text-styling-H3">Mojito</p>
+                <p class="priser-drinks">90 kr,-</p>
+                <img src="img/mojito.png" alt="">
+            </div>
+            <div class="populaer-drink-div">
+                <p class="text-styling-H3">Strawberry daiquiri</p>
+                <p class="priser-drinks">90 kr,-</p>
+                <img src="img/strawberry.png" alt="">
+            </div>
+            <div class="populaer-drink-div">
+                <p class="text-styling-H3">Bramble</p>
+                <p class="priser-drinks">90 kr,-</p>
+                <img src="img/brumble.png" alt="">
+            </div>
+        </div>
+
+        <div class="knap-drinks-kort-div">
+            <button class="drinks-kort-knap" onclick="location.href='drinks.html'">
+                <div class="btn-border">DRINKS KORT</div>
+            </button>
+        </div>
+    </section>
+
+    <section class="carousel-section">
+        <h1 class="titel-drinks"><span>EVENTS</span> OG <br> BEGIVENHEDER</h1>
+        <br>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div id=eventsContainer></div>
+            </div>
+
+        </div>
+        <div class="btn-wrap">
+            <button class="carousel-btn" onclick="prevSlide()">
+                <div class="btn-div">❮</div>
+            </button>
+            <button class="carousel-btn" onclick="nextSlide()">
+                <div class="btn-div">❯</div>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div> <a href="#header-content"> <img src="img/froog.png" alt=""> </a>
+            </div>
+            <div>
+                <h2>Åbningstider</h2><br>
+                <p>Fredag kl. 22-04</p>
+                <p>Lørdag kl. 22-04</p>
+                <br>
+                <br>
+                <p>Aldersgrænse: 18+</p>
+                <p>CVR-nummer: 32438660</p>
+            </div>
+            <div>
+                <h2>Find os</h2><br>
+                <p>Froggys By Night</p>
+                <p>Odense</p>
+                <br>
+                <p>+4565907447</p>
+                <br>
+                <p>froggys@froggyscafe.dk</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+<style>
+    #events-wrap {
+        display: flex;
+        width: -webkit-fill-available;
+    }
+
+    @media screen and (max-width: 1065px) {
+
+        #events-wrap {
+            width: 750px;
+        }
+
+        .events-img {
+            width: 250px;
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+
+        #events-wrap {
+            width: 600px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    @media screen and (max-width: 425px) {
+
+        #events-wrap {
+            height: auto;
+        }
+
+        .events {
+            max-width: 300px;
+
+        }
+    }
+</style>

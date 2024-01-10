@@ -1,0 +1,802 @@
+html {
+width: 100%;  
+overflow-x: hidden;
+display: flex;
+justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+}
+
+/* Main navigation, som bruges til de øvrige sider udover forsiden */
+
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1C0221;
+}
+
+/* Main navigation, som bruges til de øvrige sider udover forsiden */
+
+body {
+  font-family: 'Cinzel';
+  background-color: #093A41;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: 'Karla';
+  font-size: 21px;
+}
+
+header {
+  height: 95vh;
+}
+
+header img {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: #1C0221;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul li {
+  font-family: 'Karla';
+  padding: 10px;
+  list-style-type: none;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav,
+ul,
+li,
+a {
+  text-decoration: none;
+}
+
+.video-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95vh;
+  object-fit: cover;
+  border-bottom: 1px solid #F6AE2D;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.popup-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.introduktion {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  gap: 35px;
+}
+
+.intro-container p,
+h1 {
+  color: #fff;
+}
+
+.intro-container h1 {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #F6AE2D
+}
+
+.intro-billede {
+  width: 300%;
+}
+
+.intro-billede img {
+  max-width: 100%;
+}
+
+.intro-knapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+button {
+  font-family: 'Karla';
+  border: none;
+  font-weight: bold;
+  width: 150px;
+}
+
+.btn-border {
+  display: flex;
+  justify-content: center;
+  margin: 7px;
+  padding: 10px 20px;
+  border: solid #093A41 1px;
+  text-align: center;
+  color: #093A41;
+}
+
+.drinks-kort-knap {
+  background-color: #B8CBC9;
+}
+
+
+h1 {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 21px;
+  color: #FFFFFF;
+}
+
+/* Nu kommer style på Drinks*/
+
+.drinks-overskrift-og-teskt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.text-styling-H3 {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px;
+  padding-top: 30px;
+}
+
+.text-styling-pris {
+  font-size: 21px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px;
+}
+
+.drinkskort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 100px;
+}
+
+.drinksection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overskrift-og-tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drinkskortbilleder {
+  width: 360px;
+}
+
+/* Nu slutter style på Drinks*/
+
+.drinks-background-container {
+  height: 400px;
+  background-color: #1C0221;
+  border-top: 1px solid #F6AE2D;
+  border-bottom: 1px solid #F6AE2D;
+}
+
+.drinks-background-container img {
+  margin-top: 40px;
+  height: 300px;
+  width: 300px;
+}
+
+.drinks-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.prikker {
+  width: 10px;
+  height: 10px;
+  background-color: #F6AE2D;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.titel-drinks {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.paragraf-drinks {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 25px;
+}
+
+.titel-drinks span {
+  color: #F6AE2D;
+  font-weight: bold;
+}
+
+
+.populaer-drinks-container {
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.prikker-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.populaer-drinks {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.populaer-drink-div {
+  text-align: center;
+
+}
+
+.populaer-drinks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priser-drinks {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.populaer-drinks-container img {
+  height: 400px;
+  width: 300px;
+}
+
+.knap-drinks-kort-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+/* EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS */
+
+.carousel-section {
+  margin: 100px 50px 100px 50px;
+}
+
+.carousel-container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.events {
+  margin: 0px 50px 0px 50px;
+}
+
+
+.events-cards {
+  display: flex;
+  background-color: #1C0221;
+  border: 1px solid #F6AE2D;
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.events-img {
+  width: 400px;
+  height: 400px;
+}
+
+.events-infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.events-title {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.events-date {
+  margin-bottom: 10px;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.carousel-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6AE2D;
+  height: 45px;
+  width: 45px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #093A41 solid 1px;
+  height: 30px;
+  width: 30px;
+}
+
+footer {
+  background-color: #1C0221;
+}
+
+
+.footer-container {
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-container img {
+  margin-bottom: 40px;
+  width: 200px;
+}
+
+.footer-container h2 {
+  color: #F6AE2D;
+}
+
+/* BOOK */
+
+.overskrift-book {
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.overskrift-book span {
+  color: #F6AE2D;
+}
+
+.paragraf-book {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.knapper-book {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1065px) {
+
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-billede {
+    max-width: 500px;
+  }
+
+  .intro-container h1 {
+    text-align: center;
+  }
+
+  .text-styling-H3 {
+    font-size: 20px;
+  }
+
+  .events {
+    margin: 0;
+  }
+
+  .intro-knapper {
+    justify-content: center;
+  }
+
+  .populaer-drinks-container img {
+    height: 300px;
+    width: 250px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
+  section {
+    margin-left: 0;
+  }
+
+  nav img {
+    height: 100px;
+  }
+
+  header {
+    height: 95vh;
+  }
+
+  #video-background {
+    height: 95vh;
+  }
+
+  .introduktion {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .intro-container h1 {
+    text-align: center;
+  }
+
+  .intro-knapper {
+    justify-content: center;
+  }
+
+  .drinks-background-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .drinks-background-container {
+    height: 300px;
+  }
+
+  .titel-drinks {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .populaer-drinks-container img {
+    height: 250px;
+    width: 200px;
+  }
+
+  .populaer-drinks-container {
+    height: 400px;
+  }
+
+  .events {
+    margin-left: 50px;
+  }
+
+  .events-description {
+    font-size: 18px;
+  }
+
+  .events-title {
+    color: #fff;
+  }
+
+  .carousel-section {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .events-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .btn-wrap {
+    margin-bottom: 50px;
+  }
+
+  footer img {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  .overskrift-book {
+    font-size: 40px;
+  }
+
+  .intro-container h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .titel-drinks {
+    font-size: 40px;
+    width: auto;
+  }
+
+  .populaer-drinks-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .drinks-main-container div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .drinks-main-container {
+    flex-direction: column;
+  }
+
+  .drinks-background-container {
+    height: auto;
+  }
+
+  .drinks-background-container img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .populaer-drink-div img {
+    width: 400px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 695px) {
+
+  .events-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .events-img {
+    margin-bottom: 20px;
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+  section {
+    margin-right: 0;
+  }
+
+  .intro-billede {
+    width: auto;
+  }
+
+  .intro-knapper {
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  nav li {
+    font-size: 19px;
+  }
+
+  .intro-billede img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .intro-container p{
+    width: 99%;
+
+  }
+
+  .drinks-background-container {
+    height: auto;
+  }
+
+  .drinks-main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .drinks-main-container div img {
+    width: 300px;
+    height: auto;
+  }
+
+  .prikker-container {
+    margin-bottom: 25px;
+  }
+
+  .paragraf-drinks {
+    width: auto;
+  }
+
+  .populaer-drinks-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .populaer-drink-div {
+    margin-bottom: 25px;
+  }
+
+  .populaer-drink-div img {
+    width: 300px;
+  }
+
+  .footer-container {
+    height: auto;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .events {
+    margin: 25px;
+  }
+
+  .events-img {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .events-cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .events-infobox {
+    margin-left: 0;
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+}
