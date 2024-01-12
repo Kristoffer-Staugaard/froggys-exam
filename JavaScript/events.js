@@ -11,7 +11,7 @@ fetch('https://froggy-e3fac-default-rtdb.europe-west1.firebasedatabase.app/event
         for (let key in data) {
             let dataarray = data[key];
 
-            let eventsElement = document.createElement("div");
+            let eventsElement = document.createElement("article");
             eventsElement.classList.add("events-cards");
 
             let infoElement = document.createElement("div");

@@ -16,13 +16,11 @@ fetch('https://froggy-e3fac-default-rtdb.europe-west1.firebasedatabase.app/drink
       
             //drinkElement.textContent = `${dataarray.name} ${dataarray.price} kr. `;
 
-            let nameElement = document.createElement("p");
-            nameElement.classList.add("text-styling-H3");
+            let nameElement = document.createElement("h3");
             nameElement.textContent = dataarray.name;
 
             
             let priceElement = document.createElement("p");
-            priceElement.classList.add("text-styling-pris");
             priceElement.textContent = `${dataarray.price} kr.`;
 
             

@@ -14,6 +14,16 @@ a {
   color: #fff;
 }
 
+h3 {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px;
+  padding-top: 30px;
+}
+
 /* Main navigation, som bruges til de øvrige sider udover forsiden */
 
 .nav-main {
@@ -120,11 +130,18 @@ a {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.introduktion {
+main {
   margin-bottom: 100px;
   margin-top: 100px;
-  background-size: 150px;
-  background-repeat: no-repeat;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+section {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .intro-container {
@@ -132,8 +149,6 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
   margin: 0 auto;
   gap: 35px;
 }
@@ -202,37 +217,10 @@ h1 {
 p {
   font-size: 21px;
   color: #FFFFFF;
+  padding-bottom: 5px;
 }
 
 /* Nu kommer style på Drinks*/
-
-.drinks-overskrift-og-teskt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  margin-top: 50px;
-}
-
-.text-styling-H3 {
-  font-family: 'Cinzel';
-  font-weight: bold;
-  font-size: 30px;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 5px;
-  padding-top: 30px;
-}
-
-.text-styling-pris {
-  font-size: 21px;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 5px;
-}
 
 .drinkskort {
   display: flex;
@@ -277,8 +265,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .prikker {
@@ -290,33 +278,20 @@ p {
   cursor: pointer;
 }
 
-.titel-drinks {
+.center-titel {
   text-align: center;
   font-size: 60px;
-  color: #fff;
-  width: 60%;
-  margin: 0 auto;
   margin-bottom: 25px;
-  margin-top: 50px;
 }
 
-.paragraf-drinks {
+.center-p {
   text-align: center;
-  margin: 0 auto;
-  width: 75%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .titel-drinks span {
   color: #F6AE2D;
   font-weight: bold;
-}
-
-
-.populaer-drinks-container {
-  height: 500px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .prikker-container {
@@ -327,14 +302,8 @@ p {
   gap: 10px;
 }
 
-.populaer-drinks {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 .populaer-drink-div {
   text-align: center;
-
 }
 
 .populaer-drinks-container {
@@ -344,30 +313,21 @@ p {
   align-items: center;
 }
 
-.priser-drinks {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
 .populaer-drinks-container img {
   height: 400px;
   width: 300px;
 }
 
-.knap-drinks-kort-div {
+.btn-wrap {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-
+  gap: 30px;
 }
 
 /* EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS  EVENTS */
-
-.carousel-section {
-  margin: 100px 50px 100px 50px;
-}
 
 .carousel-container {
   width: 1440px;
@@ -380,11 +340,6 @@ p {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
-.events {
-  margin: 0px 50px 0px 50px;
-}
-
 
 .events-cards {
   display: flex;
@@ -420,12 +375,6 @@ p {
   margin-bottom: 10px;
 }
 
-.btn-wrap {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
 .carousel-btn {
   border: none;
   display: flex;
@@ -446,14 +395,15 @@ p {
 }
 
 footer {
+  padding-left: 5vw;
+  padding-right: 5vw;
   background-color: #1C0221;
 }
-
 
 .footer-container {
   height: 250px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -472,24 +422,6 @@ footer {
 
 /* BOOK */
 
-.overskrift-book {
-  align-items: center;
-  margin: 0 auto;
-  width: 90%;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.overskrift-book span {
-  color: #F6AE2D;
-}
-
-.paragraf-book {
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
 .knapper-book {
   display: flex;
   justify-content: space-around;
@@ -499,11 +431,6 @@ footer {
 }
 
 @media screen and (max-width: 1065px) {
-
-  section {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 
   .intro-container {
     display: flex;
@@ -536,15 +463,9 @@ footer {
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   body {
     max-width: 768px;
-  }
-
-  section {
-    margin-left: 0;
   }
 
   nav img {
@@ -579,20 +500,6 @@ footer {
 
   .intro-knapper {
     justify-content: center;
-  }
-
-  .drinks-background-container img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .drinks-background-container {
-    height: 300px;
-  }
-
-  .titel-drinks {
-    width: 80%;
-    margin-top: 50px;
   }
 
   .populaer-drinks-container img {
@@ -637,21 +544,12 @@ footer {
 
 @media screen and (max-width: 740px) {
 
-  .overskrift-book {
-    font-size: 40px;
-  }
-
   .intro-container h1 {
     font-size: 40px;
   }
 
   p {
     font-size: 18px;
-  }
-
-  .titel-drinks {
-    font-size: 40px;
-    width: auto;
   }
 
   .populaer-drinks-container {
@@ -682,7 +580,6 @@ footer {
     width: 400px;
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 695px) {
@@ -700,8 +597,13 @@ footer {
     margin-bottom: 20px;
   }
 
+  .footer-container {
+    height: auto;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
-
 
 @media screen and (max-width: 425px) {
 
@@ -751,10 +653,6 @@ footer {
     margin-bottom: 25px;
   }
 
-  .paragraf-drinks {
-    width: auto;
-  }
-
   .populaer-drinks-container {
     display: flex;
     flex-direction: column;
@@ -767,13 +665,6 @@ footer {
 
   .populaer-drink-div img {
     width: 300px;
-  }
-
-  .footer-container {
-    height: auto;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   .events {
